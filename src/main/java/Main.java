@@ -11,11 +11,11 @@ public class Main {
         TelegramBotsApi botsApi = new TelegramBotsApi();
         //  Register our bot
         try {
-            botsApi.registerBot(new Myamazingbot());
+            botsApi.registerBot(new CatPhoto());
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }
-
+        System.out.println("Cat photo bot successfully started!");
     }
 }
 
